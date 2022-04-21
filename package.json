@@ -1,0 +1,30 @@
+{
+  "name": "weblog",
+  "version": "0.0.1",
+  "description": "A personal weblog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelbriceno/weblog.git"
+  },
+  "keywords": [
+    "weblog",
+    "blog",
+    "diary"
+  ],
+  "author": "Miguel Angel Briceño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelbriceno/weblog/issues"
+  },
+  "homepage": "https://github.com/miguelbriceno/weblog#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "colors": "^1.4.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3"
+  }
+}
