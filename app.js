@@ -21,14 +21,13 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 /*-------- Root rute --------*/
 app.get("/", function(req, res) {
   console.log("Server runnig on port 3000".bgWhite.blue);
-  //res.send("Hello World"); //For testing
-  res.sendFile(__dirname + "/index.html"); // To recive from a Form
+  res.render("home", {startingContent: homeStartingContent});
 });
 
 /*-------- Sample page rute --------*/
-app.get("/sample", (req, res) => {
-  res.render("sample");
-});
+// app.get("/sample", (req, res) => {
+//   res.render("sample");
+// });
 
 /*-------- Post request --------*/
 //app.post("/", function(req, res){

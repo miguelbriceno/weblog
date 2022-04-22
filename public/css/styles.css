@@ -6,27 +6,55 @@ elemnts in the HTML file. */
   --nameFont: "Rajdhani", sans-serif;
   --cmcLinkFont: "Staatliches", cursive;
   --main-color: #30AADD;
-  --sec-color: #2666CF;
+  --sec-color: #F2F2F2;
+  --homeFontColor: #212529;
 }
 
 /*Here the rest of CSS*/
-
+body {
+  background-color: #fff;
+}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+  background-color: var(--sec-color);
 }
-.navbar-nav  li a:hover {
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.navbar-nav li {
+  margin: 1.5em;
+}
+.navbar-nav li a {
+  text-decoration: none;
+  color: var(--homeFontColor);
+}
+.navbar-nav li a:hover {
     color: #1abc9c !important;
 }
+
+.container h1 {
+  font-size: 2em;
+  color: var(--homeFontColor);
+  padding-top: 2vw;
+  margin-bottom: 0;
+}
+
+.container p {
+  padding-top: 0.5vw;
+}
+
 
 .footer-padding {
 	padding-bottom: 60px;
@@ -58,7 +86,7 @@ footer {
 .myName {
   font-family: var(--nameFont);
   margin: 1vw auto 1vw auto;
-  color: #F2F2F2;
+  color: #000;
 }
 
 .cmcLink {
