@@ -55,6 +55,27 @@ body {
   padding-top: 0.5vw;
 }
 
+form {
+  margin-top: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+form .btn {
+  margin: 1vw 0;
+  align-self: flex-start;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.5vw;
+}
+
+form textarea, input {
+  border-radius: 5px;
+  border: 1px solid gray;
+}
 
 .footer-padding {
 	padding-bottom: 60px;
@@ -79,7 +100,7 @@ body {
 footer {
   text-align: center;
   margin: -0.5vw auto auto auto;
-  background-color: var(--sec-color);
+  background-color: #1abc9c;
   padding: 2vw;
 }
 
@@ -93,7 +114,7 @@ footer {
   text-decoration: none;
   font-size: 16px;
   font-family: var(--cmcLinkFont);
-  color: #3DBBDD;
+  color: #fff;
 }
 
 /* RESPONSIVE */
