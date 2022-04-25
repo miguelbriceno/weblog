@@ -42,6 +42,15 @@ app.get("/compose", function(req, res) {
   res.render("compose");
 });
 
+/*-------- Posts rute --------*/
+app.get("/posts/:post", (req, res) => {
+  posts.forEach((post) => {
+    if (req.params.post === post.tittle){
+      console.log("Match found");
+    }
+  });
+});
+
 /*-------- POST SECTION --------*/
 /*-------- Compose POST request --------*/
 app.post("/compose", function(req, res){
