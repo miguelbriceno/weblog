@@ -3,6 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const colors = require("colors");
+const _ = require("lodash");
 //const request = require("request"); //Just in case
 
 /*-------- Modules inicialitation --------*/
@@ -45,8 +46,13 @@ app.get("/compose", function(req, res) {
 /*-------- Posts rute --------*/
 app.get("/posts/:post", (req, res) => {
   posts.forEach((post) => {
-    if (req.params.post === post.tittle){
-      console.log("Match found");
+    const paramUrl = _.lowerCase(req.params.post);
+    const postTittle = _.lowerCase(post.tittle);
+    if (paramUrl === postTittle){
+      res.render("postBase", {
+        tittle: postTittle,
+        body: post.body
+      });
     }
   });
 });
