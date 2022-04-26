@@ -55,6 +55,14 @@ body {
   padding-top: 0.5vw;
 }
 
+ div.post h1{
+   display: block;
+ }
+
+ div.post p, a{
+   display: inline-block;
+ }
+
 form {
   margin-top: 1vw;
   display: flex;
